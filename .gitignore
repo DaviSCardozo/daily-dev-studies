@@ -1,0 +1,17 @@
+# VS Code
+.vscode/
+
+# Node.js
+node_modules/
+
+# Build
+dist/
+coverage/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Variáveis de ambiente
+.env
+.env.local
