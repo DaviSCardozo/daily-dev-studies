@@ -169,8 +169,34 @@ ao e sua reação em cada uma das tags DIV e Span
 na aula passado foi levando o problema de espaço em branco entre as spans e foi aplicado display: flex para retirar e espaço.
 
 ### Seletores:
-tipos de seletores element(TAG), .CLASS (.), ID(#), seletor univeral (*) e seletor por atributo ([]). OBS:seletor ID é mais perfomatico que o seletor de atributo[].
+tipos de seletores element(TAG), .CLASS (.), ID(#), seletor univeral (*) e seletor por atributo ([ATRIBUTO]). OBS:seletor ID é mais perfomatico que o seletor de atributo[].
 
+### Seletores de Pseudo-Classes:
+É utilizadopara dar style diferenciado para filhos de classes usando os (:) e depois uma função exemplo div:nth-child(even) Vai selescionar os imparese das classes.
+### Seletores de Pseudo-Elementos:
+É utilizadopara dar style diferenciado para filhos de elementos usando os (::) e depois uma função exemplo p::first-letter
+vai pegar primeira letra do elemento paragrafo.
+
+### Seletores de Irmãos Adjacentes:
+exemplo:
+span + p {
+   background-color: grey;
+}
+
+### Seletores de Irmãos Gerais:
+div ~ p {
+    background-color: red;
+}
+
+### Seletores de Filhos (Descendentes Diretos):
+.exemplo-filhos > p {
+    background-color: blueviolet;
+}
+
+### Seletores de Descendentes:
+#exemplo-descendentes  p {
+    background-color: yellow;
+}
 
 ## Tecnologias
 
