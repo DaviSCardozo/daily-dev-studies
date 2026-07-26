@@ -9,21 +9,11 @@ Registrar minha evolução diária em programação, desenvolvimento web e outra
 ## Trilhas de estudo
 
 ## CSS
-
-### Exercicio html-css-basico-01.html
-### Exercicio html-css-basico-02.html
-### Exercicio html-css-basico-03.html
-### Exercicio html-css-basico-04.html
-### Exercicio html-css-basico-05.html
-### Exercicio Efeito Cascata
-### Exercicio Herança
-### Exercicio Modelo de Caixa (Box Model)
-
 Neste estudo feito arquivo html com um lista não ordenada linkada com exercicicios de CSS com exemplos diverços:
 
 ### html-css-basico-01.html:
 foi executado atividade de integração de style como no body cor de fundo,h1 trocado a cor e no h2 cor do bloco de fundo e cor da letras.
-Exercicio 
+Exercicio:
 <style>
 body{
     background-color: darkblue;
@@ -198,6 +188,51 @@ div ~ p {
     background-color: yellow;
 }
 
+### Especificidade
+Especificidade tem 3 regras:
+1° regra que se colocar !Important ela vira pioridade (cuidado ao usar de preferencoia não usar dar prioridade a regra 2).ex:
+.caixa{
+    height: 100px;
+    width: 100px;
+    background-color: orange!important;
+}
+div.azul {
+    background-color: blue;
+}
+No exemplo acima (element class="caixa") Especificação do Seletor: (0, 1, 0) ou seja div class="azul" Especificação do Seletor: (0, 1, 1) teria prioridade então foi usado o elemento !important assim ele burlou a regra do calculo de prioridade de elementos.
+
+2° quanto mais seletor fot mais especifico ganha prioridade exemplo.
+#unico {
+    background: linear-gradient(to right, red,yellow);
+}
+.advertencia {
+    background-color: green;
+    padding: 5px;
+}
+no exemplo acima o <element id="unico"> Especificação do Seletor: (1, 0, 0) esta mais especifico que o <element class="advertencia"> Especificação do Seletor: (0, 1, 0).
+
+3° nesta regra a ULTIMA SEMPRE É APLICADA ex:
+.advertencia {
+    background-color: green;
+    padding: 5px;
+}
+.importante {
+    background-color: crimson;
+}
+exemplo acima os calculos dos elementos empatam. Especificação dos Seletores: (0, 1, 0).
+
+### Família de Fonte
+mostrado site para buscar as fontes de site:https://fonts.google.com/ tem como impportar arquivo no style, usar ps links mo head ou baixa o arquivo zip e colocar no projeto e referenciar a pasta.
+
+### Box Sizing
+height: 100px;
+width: 100px;
+padding: 10px;
+border: 5px 
+
+box-sizing: border-box; com esta especificação a caixa vai respeitar o tamanho especificado no height e no width:
+
+box-sizing: content-box; com esta especificação é padrao ele vai colocar tamanho o tamanho como height e no width no conteudo e vai adicionar padding e border ou seja tamanho da minha caixa ficar de height 130 e width 130
 ## Tecnologias
 
 - HTML

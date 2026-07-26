@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Especificidade</title>
+        <style>
+            body{
+                background-color: black;
+                color: white;
+            }
+            .caixa{
+                height: 100px;
+                width: 100px;
+                background-color: orange!important;
+            }
+            div.azul {
+                background-color: blue;
+            }
+            #unico {
+                background: linear-gradient(to right, red,yellow);
+            }
+            .advertencia {
+                background-color: green;
+                padding: 5px;
+            }
+            .importante {
+                background-color: crimson;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2>1) Regra com !Important</h2>
+        <div class="caixa azul">Cuidado com !Importante</div>
+        <h2>2) Seletor Mais Especifico</h2>
+        <div id="unico" class="advertencia">Quem ganha?</div>
+        <h2>3)Última Regra Aplicada (Empate)</h2>
+        <div class="advertencia Importante">Essa informação é sigilosa!</div>  
+    </body>
+</html>
