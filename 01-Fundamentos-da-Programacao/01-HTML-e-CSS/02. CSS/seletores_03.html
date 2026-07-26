@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            body{
+                background-color: black;
+                color: white;
+            }
+            span + p {
+                background-color: grey;
+            }
+            div ~ p {
+                background-color: red;
+            }
+            .exemplo-filhos > p {
+                background-color: blueviolet;
+            }
+            #exemplo-descendentes  p {
+                background-color: yellow;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2>Seletores de Irmãos Adjacentes</h2>
+        <div>
+            <span>Antes</span>
+            <p>Paragrafo #01</p>
+            <p>Paragrafo #02</p>
+        </div>
+        
+        <h2>Seletores de Irmãos Gerais</h2>
+        <div>
+            <div>Antes</div>
+            <p>Paragrafo #01</p>
+            <p>Paragrafo #02</p>
+        </div>
+
+        <h2>Seletores de Filhos Diretos</h2>
+        <div class="exemplo-filhos">
+            <p>Paragrafo #01</p>
+            <div>
+                <p>Paragrafo #02</p>
+            </div>
+        </div>
+        <h2>Seletores de Descendentes</h2>
+        <div id="exemplo-descendentes">
+            <p>Paragrafo #01</p>
+            <div>
+                <p>Paragrafo #02</p>
+            </div>
+        </div>
+        <a href="./exercicios-html-css.html">Voltar</a>
+    </body>
+</html>
